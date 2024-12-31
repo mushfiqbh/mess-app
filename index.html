@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="flex" style="width: 50%;">
+      <ul>
+        <li><b>REPORT</b></li>
+        <li>Boro Bazar</li>
+        <li>Prev</li>
+        <li>Current</li>
+        <li>Net</li>
+        <li>Rate</li>
+        <li>Cash</li>
+      </ul>
+      <ul id="final-data"></ul>
+    </div>
+
+    <form id="fetch-form">
+      <input type="text" id="filter-input" placeholder="Filter (optional)" />
+      <button type="submit">Get</button>
+    </form>
+    <table id="data-table">
+      <thead id="table-header"></thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <script src="app.js"></script>
+  </body>
+</html>
